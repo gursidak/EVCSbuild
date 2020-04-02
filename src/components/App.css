@@ -1,77 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
 .Sign {
   background-color: white;
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: fixed;
 }
-
 .Sign .logo-header {
   background-color: red;
+  width: 100%;
+  height: auto;
 }
-
 .Sign .logo-header img {
-  height: 100px;
-  width: 10%;
+  height: 60px;
+  width: 80px;
+  position: left;
 }
-
+.Sign .logo-header .CompName {
+  display: inline-block;
+  color: white;
+  font-size: large;
+  margin: 17px 10px;
+  font-size-adjust: 0.6;
+  font-weight: bolder;
+}
 @media screen and (max-width: 528px) {
   .Sign .logo-header img {
     width: 25%;
   }
 }
-
 @media screen and (max-width: 1050px) {
   .Sign .logo-header img {
     width: 18%;
   }
 }
-
 .Sign .Sign-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 70px;
   height: 100%;
   margin: 0 auto;
   width: 50%;
   text-align: center;
 }
-
 .Sign .sign-in-form {
-  padding: 30px;
+  padding: auto;
 }
-
 .Sign .otp-boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .Sign .otp-input {
   border-style: double;
   border-radius: 25%;
-  margin: 0.2em;
+  margin: 0.15em;
   outline: none;
 }
-
 .Sign Button {
   display: block;
   margin: 40px auto;
 }
-
 .Sign .login-link {
   display: block;
   padding-top: 60px;
@@ -79,7 +71,6 @@
   color: black;
   font-weight: 500;
 }
-
 .Sign .login-link:hover {
   text-decoration: underline;
   color: red;
@@ -101,29 +92,38 @@
   .Sign .sign-in-form .login-link {
     padding-top: 0px;
   }
+
   .addVehicleInfo {
     background: red;
   }
 }
-
 .Caraousel .logo-header {
   background-color: red;
+  width: 100%;
+  height: auto;
 }
-
 .Caraousel .logo-header img {
-  height: 100px;
-  width: 10%;
+  height: 60px;
+  width: 80px;
+  position: left;
 }
-
+.Caraousel .logo-header .CompName {
+  display: inline-block;
+  color: white;
+  font-size: large;
+  margin: 17px 10px;
+  font-size-adjust: 0.6;
+  font-weight: bolder;
+}
 @media screen and (max-width: 528px) {
   .Caraousel .logo-header img {
     width: 25%;
   }
 }
-
 @media screen and (max-width: 1050px) {
   .Caraousel .logo-header img {
     width: 18%;
   }
 }
+
 /*# sourceMappingURL=App.css.map */

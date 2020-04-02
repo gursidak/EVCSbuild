@@ -34,7 +34,7 @@ import { Link } from 'react-router-dom';
                <div>
                 <Card shadow={0} style={{width:'100%' , height:'500px'}}>   
                 <form className='sign-in-form'>
-                     <i style={{fontSize:'40px', color:'red' , marginRight:'20px'}} className='fa fa-phone-square'></i>
+                     <i style={{fontSize:'40px', color:'red',margin:'0 auto'}} className='fa fa-phone-square'></i>
                      <Textfield
                      style={{fontSize:'60px'}}
                      onChange={() => {}}
@@ -148,6 +148,9 @@ import { Link } from 'react-router-dom';
             <div className ='Sign'> 
                  <header className='logo-header'>
                      <img src='logo.jpg' alt='GATS-logo' />
+                    <div className='CompName'>
+                        GATS SCS
+                    </div>
                  </header>       
 
              <div className='Sign-content'>

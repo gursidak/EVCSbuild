@@ -1,15 +1,28 @@
-
+*{
+    box-sizing: border-box;
+}
 
 @mixin header {
 
 .logo-header{
     background-color: red;
+    width:100%;
+    height:auto;
 
-img{
-    height:100px;
-    width:10%;
-
+img{ 
+    height:60px;
+    width:80px;
+    position: left;
 }
+ .CompName {
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: 17px 10px;
+    font-size-adjust: 0.60;
+    font-weight: bolder;
+}
+
 
 }
 
@@ -32,23 +45,18 @@ img{
 }
 
 .Sign{
-
     @include header();
     background-color: white;
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: fixed;
 
-
-
     .Sign-content{
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        font-size: 80px;
-        
+        font-size: 70px;        
         height: 100%;
         margin: 0 auto;
         width:50%;
@@ -57,22 +65,19 @@ img{
     }
 
     .sign-in-form{
-        padding: 30px;
+        padding: auto;
     }
 
-    .otp-boxes{
-        
+    .otp-boxes{        
         display: flex;
         align-items: center;
-
     }
 
     .otp-input{
         border-style: double;
         border-radius: 25%;
-        margin: 0.2em;
+        margin: 0.15em;
         outline: none;
-
     }
 
     Button {
