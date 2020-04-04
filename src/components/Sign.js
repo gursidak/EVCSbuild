@@ -4,10 +4,7 @@ import {Textfield , Button, Card, Grid, Cell} from 'react-mdl';
 import ReactMDL from 'react-mdl';
 // import OtpInput from 'react-otp-input';
 import { Link } from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel';  
-import 'owl.carousel/dist/assets/owl.carousel.css';  
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
+import Carousel from './Carousel'
  class Sign extends Component {
    
     constructor(props){
@@ -166,19 +163,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
              </div>      
             </div>
             <div className="slider">
-                <OwlCarousel
-                className="owl-theme"
-                items='1'
-                autoplay
-                loop
-                >
-                
-                    <div className='item'><img src = 'logo.jpg'/></div>
-                    <div className='item'><img src = 'logo.jpg'/></div>
-                    <div className='item'><img src = 'logo.jpg'/></div>
-                    <div className='item'><img src = 'logo.jpg'/></div>
-                    <div className='item'><img src = 'logo.jpg'/></div>  
-                </OwlCarousel>             
+                <Carousel/>                          
             </div>
             
         </div>
