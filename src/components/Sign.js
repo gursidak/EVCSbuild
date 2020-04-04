@@ -4,8 +4,9 @@ import {Textfield , Button, Card, Grid, Cell} from 'react-mdl';
 import ReactMDL from 'react-mdl';
 // import OtpInput from 'react-otp-input';
 import { Link } from 'react-router-dom';
-
-
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
  class Sign extends Component {
    
@@ -144,7 +145,10 @@ import { Link } from 'react-router-dom';
     
 
     render() {
+        
         return (
+        <div className="sign-box">
+            <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
             <div className ='Sign'> 
                  <header className='logo-header'>
                      <img src='logo.jpg' alt='GATS-logo' />
@@ -159,11 +163,27 @@ import { Link } from 'react-router-dom';
                         {this.toggleinup()} 
                         </Cell>
                     </Grid>
-             </div>
-        
+             </div>      
             </div>
-
-     )
+            <div className="slider">
+                <OwlCarousel
+                className="owl-theme"
+                items='1'
+                autoplay
+                loop
+                >
+                
+                    <div className='item'><img src = 'logo.jpg'/></div>
+                    <div className='item'><img src = 'logo.jpg'/></div>
+                    <div className='item'><img src = 'logo.jpg'/></div>
+                    <div className='item'><img src = 'logo.jpg'/></div>
+                    <div className='item'><img src = 'logo.jpg'/></div>  
+                </OwlCarousel>             
+            </div>
+            
+        </div>
+    )
+    
     }
 }
 
