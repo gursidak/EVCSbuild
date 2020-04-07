@@ -8,6 +8,23 @@
   position: relative;
 }
 .sign-box .Sign {
+  /*
+  @media screen and (max-width:528px){
+      .logo-header{
+          img{
+              width: 25%;
+          }
+      }
+  }
+
+  @media screen and (max-width:1050px) {
+      .logo-header{
+          img{
+              width: 18%;
+          }
+      }
+  }
+  */
   background-color: white;
   width: 50%;
   height: 100%;
@@ -31,16 +48,6 @@
   margin: 17px 10px;
   font-size-adjust: 0.6;
   font-weight: bolder;
-}
-@media screen and (max-width: 528px) {
-  .sign-box .Sign .logo-header img {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .sign-box .Sign .logo-header img {
-    width: 18%;
-  }
 }
 .sign-box .Sign .Sign-content {
   display: flex;
