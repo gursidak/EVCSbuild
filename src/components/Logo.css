@@ -11,9 +11,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   color: white;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 .body .content-box {
@@ -24,9 +24,9 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -34,13 +34,15 @@
 }
 
 .body .content-box img {
-  width: 40%;
-  height: 35%;
-  padding-top: 10%;
+  width: 30vmax;
+  height: 50vmin;
+  margin-top: 100px;
 }
 
 .body .content-box h1 {
-  padding-top: 25%;
-  font-size: x-large;
+  margin: none;
+  position: fixed;
+  bottom: 1vh;
+  font-size: inherit;
 }
 /*# sourceMappingURL=Logo.css.map */

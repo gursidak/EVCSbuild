@@ -1,15 +1,32 @@
+$redshade : #EC1B21; 
 
+*{
+    box-sizing: border-box;
+}
 
 @mixin header {
 
 .logo-header{
-    background-color: red;
+    background-color: $redshade;
+    width:100%;
+    height:auto;
 
-img{
-    height:100px;
-    width:10%;
+img{ 
+    height:60px;
+    width:80px;
+    position: left;
+}
+ .CompName {
+    display: inline-block;
+    color: white;
+    font-size: x-large;
+    margin: 17px 10px;
+    font-size-adjust: 0.60;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
 
 }
+
 
 }
 
@@ -31,55 +48,115 @@ img{
 
 }
 
-.Sign{
+
+.sign-box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+ .Sign{
 
     @include header();
     background-color: white;
-    width: 100%;
+    width: 40%;
     height: 100%;
     position: fixed;
-
+    float:left;
 
 
     .Sign-content{
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        font-size: 80px;
-        
+        font-size: 70px;        
         height: 100%;
         margin: 0 auto;
-        width:50%;
-        text-align: center;    
+        width:100%;
+        text-align: center; 
+        
 
     }
 
     .sign-in-form{
-        padding: 30px;
+        padding: auto;
+        width: 100%;
+
+        h3{
+            font-family: 'Quicksand', sans-serif;
+            color: rgba(0, 0, 0, 0.9);
+        }   
+                
+ 
+        .input-box{
+            display:flex;
+            flex-direction: row;
+            width: fit-content;
+            border: 2px solid $redshade;
+            margin: 0 auto;
+            padding: 0px;
+            font-family: 'Comic Neue', cursive;
+
+            .fa-phone{
+                padding: 5px;
+                margin: 3px;
+                font-size: 35px;
+                color: $redshade ;
+
+
+              }
+
+
+            ::placeholder{
+                font-weight: 500;
+                text-align: center;
+            }
+
+            input{
+                outline: none;
+                font-size: 1.5rem;
+                width: fit-content;
+                letter-spacing: ;
+                // text-align: center;
+                padding: 10px 20px;
+                border: none;
+                text-align: left;
+            } 
+
+            &:visited{
+                border: 2px solid $redshade;
+            }
+        }
+
+        #submitphone{
+            margin: auto;
+            font-size: 25px;
+            height: 51px;
+            color: $redshade;
+            padding: 0px;
+
+
+            &:hover{
+                background-color: $redshade ;
+                color: white;
+            }
+        }
     }
 
-    .otp-boxes{
-        
+    .otp-boxes{        
         display: flex;
-        align-items: center;
-
-    }
+        align-items: center;    
 
     .otp-input{
         border-style: double;
         border-radius: 25%;
-        margin: 0.2em;
+        margin: 0.15em;
         outline: none;
-
     }
 
     Button {
-
         display:block;
         margin: 40px auto;
-        
     }
 
     .login-link{
@@ -91,17 +168,32 @@ img{
 
     &:hover{
         text-decoration: underline;
-        color: red;
+        color: $redshade;
     }
    }
-
+ }
 }
-
+    .slider {
+        
+    width: 60%;
+    float:right;
+    height:100vh;
+    
+    img {
+        width: 100%;
+        height:100vh;
+    }
+    .owl-theme {
+        .owl-dots {
+            display: none;
+        }
+    }    
+    }
+} 
 @media screen and (max-width:485px){
 
     .Sign{
         position: static;
-        // background-color: red;
        .sign-in-form{
             padding-top: 5px;
             .otp-input{
@@ -117,26 +209,22 @@ img{
           }
     }
 
-
     .addVehicleInfo{
-        background: red;
+        background: $redshade;
     }
 }
 
-@media screen and (max-width:1050px){
 
-}
+// @media screen and (max-width:1050px){
+
+// }
 
 // 
 // @media screen and (max-width:485px){
     // 
 // }
 // 
-.Caraousel{
 
-    @include header();
-
-}
 
 
 

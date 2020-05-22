@@ -6,12 +6,11 @@ import './App.css';
         return (
             <div className='Caraousel'>
                 <header className='logo-header'>
-                <img src='logo.jpg' />
+                <img src='logo.jpg' alt='carousel' />
                 </header>
-                <h1>caraousel</h1>
             </div>
         )
     }
 }
 
-export default caraousel
+export default caraousel;
