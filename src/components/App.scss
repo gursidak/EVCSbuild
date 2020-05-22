@@ -7,7 +7,11 @@ $redshade : #EC1B21;
 @mixin header {
 
 .logo-header{
+<<<<<<< HEAD
     background-color: $redshade;
+=======
+    background-color: red;
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
     width:100%;
     height:auto;
 
@@ -15,6 +19,7 @@ img{
     height:60px;
     width:80px;
     position: left;
+<<<<<<< HEAD
 }
  .CompName {
     display: inline-block;
@@ -28,8 +33,21 @@ img{
 }
 
 
+=======
+}
+ .CompName {
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: 17px 10px;
+    font-size-adjust: 0.60;
+    font-weight: bolder;
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 }
 
+
+}
+/*
 @media screen and (max-width:528px){
     .logo-header{
         img{
@@ -45,9 +63,10 @@ img{
         }
     }
 }
-
+*/
 }
 
+<<<<<<< HEAD
 
 .sign-box {
     width: 100%;
@@ -55,30 +74,57 @@ img{
     position: relative;
 
  .Sign{
+=======
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 
+.sign-box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+ .Sign{
     @include header();
     background-color: white;
+<<<<<<< HEAD
     width: 40%;
     height: 100%;
     position: fixed;
     float:left;
 
+=======
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    float:left;
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 
     .Sign-content{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+<<<<<<< HEAD
         font-size: 70px;        
         height: 100%;
         margin: 0 auto;
         width:100%;
         text-align: center; 
         
+=======
+        font-size: 4em;        
+        height: 100%;
+        margin: 0 auto;
+        width:100%;
+        text-align: center;    
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 
     }
 
     .sign-in-form{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
         padding: auto;
         width: 100%;
 
@@ -86,8 +132,12 @@ img{
             font-family: 'Quicksand', sans-serif;
             color: rgba(0, 0, 0, 0.9);
         }   
+<<<<<<< HEAD
                 
  
+=======
+                 
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
         .input-box{
             display:flex;
             flex-direction: row;
@@ -102,15 +152,21 @@ img{
                 margin: 3px;
                 font-size: 35px;
                 color: $redshade ;
+<<<<<<< HEAD
 
 
               }
 
 
+=======
+              }
+
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
             ::placeholder{
                 font-weight: 500;
                 text-align: center;
             }
+<<<<<<< HEAD
 
             input{
                 outline: none;
@@ -135,12 +191,46 @@ img{
             color: $redshade;
             padding: 0px;
 
+=======
+
+            input{
+                outline: none;
+                font-size: 1.5rem;
+                width: fit-content;
+                // text-align: center;
+                padding: 10px 20px;
+                border: none;
+                text-align: left;
+            } 
+
+            &:visited{
+                border: 2px solid $redshade;
+            }
+        }
+    }
+        #submitphone{
+            margin: auto;
+            font-size: 25px;
+            height: 51px;
+            color: $redshade;
+            padding: 0px;
+
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 
             &:hover{
                 background-color: $redshade ;
                 color: white;
             }
+<<<<<<< HEAD
         }
+=======
+    }
+
+
+    .otp-boxes{        
+        display: flex;
+        align-items: center;
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
     }
 
     .otp-boxes{        
@@ -159,6 +249,7 @@ img{
         margin: 40px auto;
     }
 
+<<<<<<< HEAD
     .login-link{
     display: block;
     padding-top: 60px;
@@ -190,6 +281,28 @@ img{
     }    
     }
 } 
+=======
+ }
+    .slider {
+        width: 50%;
+        float:right;
+        height:100vh;
+    
+    img {
+        width: 100%;
+        height:100vh;
+        background-repeat: no-repeat;
+    }
+    .owl-theme {
+        .owl-dots {
+            display: none;
+        }
+    }    
+    }
+
+
+}
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 @media screen and (max-width:485px){
 
     .Sign{
@@ -203,12 +316,14 @@ img{
                 outline: none;
             }
 
-            .login-link{
-                padding-top:0px;
-            }  
           }
+
+        .submit-page{
+            margin: 0px;
+        }
     }
 
+<<<<<<< HEAD
     .addVehicleInfo{
         background: $redshade;
     }
@@ -224,6 +339,60 @@ img{
     // 
 // }
 // 
+
+=======
+
+
+}
+
+@media screen and (max-width:716px){
+
+    .sign-box{
+        position: static;
+    .Sign{
+        width: 100%;
+        float: none;
+     }   
+    
+
+    .slider{
+        width: 100%;
+        float: none;
+        display: none;
+    }
+}
+}
+
+
+@media screen and (max-width:400px){
+
+    .Sign-content{
+     
+        display: flex;
+        flex-direction: row;
+
+    .mdl-grid{
+
+        box-sizing: border-box;
+        width: 100%;
+        position: static;
+        margin: 0px;
+        padding: 16px;
+    }
+
+
+    .sign-in-form{
+        .input-box{
+           display: flex;
+           flex-direction: column;
+        }
+    }
+
+    }
+}
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
+
+
 
 
 

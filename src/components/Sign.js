@@ -4,7 +4,11 @@ import {Textfield , Button, Card, Grid, Cell} from 'react-mdl';
 import ReactMDL from 'react-mdl';
 // import OtpInput from 'react-otp-input';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import Carousel from './caraousel'
+=======
+import Carousel from './Carousel'
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
  class Sign extends Component {
    
     constructor(props){
@@ -30,6 +34,7 @@ import Carousel from './caraousel'
 
            if(this.state.activelog===0) {
                return( 
+<<<<<<< HEAD
                <div>
                 <form className='sign-in-form'>
 
@@ -43,6 +48,56 @@ import Carousel from './caraousel'
             </div>
                )
            }
+=======
+                <div>
+                <form className='sign-in-form'>
+
+                    <h3>GATS Charging Station</h3><br/>
+                    <div className='input-box'>
+                    <i className='fa fa-phone'></i>
+                    <input type='tel'minLength='10' pattern="-?[0-9]*(\.[0-9]+)?" maxLength='10' placeholder='Enter your phone number'></input>
+                    <Button type='button' id='submitphone' onClick={()=> this.changeState(3)}> <i className='fa fa-arrow-right' ></i></Button>
+                    </div>
+                </form>
+            </div>
+               )
+           }
+
+           else if(this.state.activelog === 3 ){
+            return(
+                <div>
+                     <h4> Enter verification code </h4>
+                 <div className='otp-boxes' style={{textAlign:'center' , justifyContent:'center'}}>
+                        <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1'  ></input>
+                        </div>
+                        <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1' ></input>
+                        </div>
+                        <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1' ></input>
+                        </div>
+                        <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1' ></input>
+                        </div>                     <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1' ></input>
+                        </div>                        
+                        <div style={{display:'flex' , alignItems:'center' }}>
+                            <input className='otp-input' style={{width:'3rem', height:'3rem' , fontSize:'2rem' , textAlign:'center'}} maxLength='1' ></input>
+                        </div>
+
+                 </div>
+                 <Button raised accent ripple style={{ background:'red' }} onClick={()=>this.changeState(1)}>SUBMIT</Button>
+                 </div>
+            );
+        }
+
+
+
+
+
+
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
 
            else if(this.state.activelog === 3 ){
                return(
@@ -76,7 +131,6 @@ import Carousel from './caraousel'
            else if(this.state.activelog === 1){
              return (
                  <div className="addVehicleInfo">
-                      <Card shadow={0} style={{width:'100%' , padding:'30px' , height:'500px'}}>   
 
                             <form className="form-elements">
                             <Textfield
@@ -108,15 +162,18 @@ import Carousel from './caraousel'
                             />
                         <Button raised accent ripple style={{ background:'red'  }} onClick={()=>this.changeState(2)}>ADD VEHICLE INFO</Button>
                         </form>
-                    </Card>
                  </div>
              )   
             }
 
             else if(this.state.activelog === 2){
                 return (
+<<<<<<< HEAD
                   <div>
                     <Card shadow={0} style={{width:'100%' , paddng:'30px' , height:'500px'}}>   
+=======
+                  <div className = 'submit-page' >
+>>>>>>> 93abac5458f3138ba84d1b0e616be321d1d1dcd8
                             <Textfield
                                 style={{fontSize:'60px'}}
                                 onChange={() => {}}
@@ -125,9 +182,14 @@ import Carousel from './caraousel'
                                 style={{width: '300px' , color:'black' }}
                             />
                             <br/>
-                            <label style={{fontSize:'1.4em'}}>UPLOAD RC : </label><br/>
-                            <input style={{margin:'0 auto' , justifyContent:'center' , alignContent:'center' , fontSize:'0.7em'}} type='file' onChange ={ (event) =>(this.fileSelector(event))} ></input>
-
+                            <label style={{fontSize:'18px' , textAlign:'center'}}>Upload RC : </label>
+                            <input style={{margin:'0 auto' , justifyContent:'center' , alignContent:'center' , fontSize:'0.2em'}} type='file' onChange ={ (event) =>(this.fileSelector(event))} ></input>
+                            <br/><br/>
+                            <select placeholder='place' style={{width:'100%'}}>
+                                <option>Select RC type</option>
+                                <option>option1</option>
+                                <option>option2</option>
+                            </select>
                             <br/>
                             {/* <label style={{fontSize:'1.4em'}}>CHOOS </label><br/> */}
                             <select placeholder='place'>
@@ -137,13 +199,10 @@ import Carousel from './caraousel'
                             </select>
                             <br/>
                        <Button raised accent ripple  style={{ background:'red' }}> SUBMIT </Button>
-                        </Card>
                   </div>
                 )               
 
-               }
-
-        
+             }
         }
     
 
@@ -161,7 +220,7 @@ import Carousel from './caraousel'
                  </header>       
 
              <div className='Sign-content'>
-                    <Grid>
+                    <Grid className='main-grid'>
                         <Cell col={12}>
                         {this.toggleinup()} 
                         </Cell>
